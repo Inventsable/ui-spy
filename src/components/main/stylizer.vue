@@ -173,6 +173,7 @@ export default {
       } else if (
         JSON.parse(window.__adobe_cep__.getHostEnvironment()).appName == "AEFT"
       ) {
+        this.theme = "gradient";
         this.setAEFT(appSkin);
       } else {
         console.log(`Style wasn't recognized`);
@@ -181,23 +182,23 @@ export default {
     setILST() {
       console.log(`${this.appName} theme is ${this.theme}`);
       this.hostStyle.ILST.forEach(prop => {
-        console.log(`adobe-${prop.name} == ${prop[this.theme]}`);
-        this.setCSS(`adobe-${prop.name}`, prop[this.theme]);
+        console.log(`apo-${prop.name} == ${prop[this.theme]}`);
+        this.setCSS(`apo-${prop.name}`, prop[this.theme]);
       });
     },
 
     // THIS NEEDS REWORK
     setAEFT(appSkin) {
       const bgcolor = appSkin.panelBackgroundColor.color;
-      this.app.setCSS("adobe-color-bg", this.toHex(bgcolor));
-      this.app.setCSS("adobe-color-dark", this.toHex(bgcolor, -15));
-      this.app.setCSS("adobe-color-input-idle", this.toHex(bgcolor, -12));
-      this.app.setCSS("adobe-color-icon", this.toHex(bgcolor, 30));
-      this.app.setCSS("adobe-color-button-disabled", this.toHex(bgcolor, 20));
-      this.app.setCSS("adobe-color-scrollbar", this.toHex(bgcolor, -5));
-      this.app.setCSS("adobe-color-scrollbar-thumb", this.toHex(bgcolor, 18));
+      this.app.setCSS("apo-color-bg", this.toHex(bgcolor));
+      this.app.setCSS("apo-color-dark", this.toHex(bgcolor, -15));
+      this.app.setCSS("apo-color-input-idle", this.toHex(bgcolor, -12));
+      this.app.setCSS("apo-color-icon", this.toHex(bgcolor, 30));
+      this.app.setCSS("apo-color-button-disabled", this.toHex(bgcolor, 20));
+      this.app.setCSS("apo-color-scrollbar", this.toHex(bgcolor, -5));
+      this.app.setCSS("apo-color-scrollbar-thumb", this.toHex(bgcolor, 18));
       this.app.setCSS(
-        "adobe-color-scrollbar-thumb-hover",
+        "apo-color-scrollbar-thumb-hover",
         this.toHex(bgcolor, 35)
       );
       this.app.setCSS("input-border-radius", "5px");
@@ -252,35 +253,35 @@ export default {
       Below are CSS variables controlled by stylizer
       By default hard-coded to Illustrator's dark theme but will ultimately be overridden on launch
    */
-  --adobe-color-bg: #323232;
-  --adobe-color-dark: #1f1f1f;
-  --adobe-color-selection: #46a0f5;
-  --adobe-color-disabled: #525252;
-  --adobe-color-hover: rgba(255, 255, 225, 0.2);
+  --apo-color-bg: #323232;
+  --apo-color-dark: #1f1f1f;
+  --apo-color-selection: #46a0f5;
+  --apo-color-disabled: #525252;
+  --apo-color-hover: rgba(255, 255, 225, 0.2);
 
-  --adobe-color-icon: #a1a1a1;
-  --adobe-color-border: #3e3e3e;
-  --adobe-color-text-active: #1b1b1b;
-  --adobe-color-text-default: #a1a1a1;
-  --adobe-color-text-disabled: #525252;
-  --adobe-color-input-focus: #fcfcfc;
-  --adobe-color-input-idle: #262626;
-  --adobe-color-input-text: rgba(255, 255, 255, 0.7);
-  --adobe-color-input-label: rgba(255, 255, 255, 0.6);
+  --apo-color-icon: #a1a1a1;
+  --apo-color-border: #3e3e3e;
+  --apo-color-text-active: #1b1b1b;
+  --apo-color-text-default: #a1a1a1;
+  --apo-color-text-disabled: #525252;
+  --apo-color-input-focus: #fcfcfc;
+  --apo-color-input-idle: #262626;
+  --apo-color-input-text: rgba(255, 255, 255, 0.7);
+  --apo-color-input-label: rgba(255, 255, 255, 0.6);
 
-  --adobe-color-scrollbar: #2a2a2a;
-  --adobe-color-scrollbar-thumb: #3e3e3e;
-  --adobe-color-scrollbar-thumb-hover: #525252;
-  --adobe-width-scrollbar: 14px;
-  --adobe-width-scrollbar-thumb: 14px;
-  --adobe-radius-scrollbar-thumb: 20px;
+  --apo-color-scrollbar: #2a2a2a;
+  --apo-color-scrollbar-thumb: #3e3e3e;
+  --apo-color-scrollbar-thumb-hover: #525252;
+  --apo-width-scrollbar: 14px;
+  --apo-width-scrollbar-thumb: 14px;
+  --apo-radius-scrollbar-thumb: 20px;
 
   --quad: cubic-bezier(0.48, 0.04, 0.52, 0.96);
   --quart: cubic-bezier(0.76, 0, 0.24, 1);
   --quint: cubic-bezier(0.84, 0, 0.16, 1);
 
-  background-color: var(--adobe-color-bg);
-  color: var(--adobe-color-text-default);
+  background-color: var(--apo-color-bg);
+  color: var(--apo-color-text-default);
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
 }
@@ -309,9 +310,14 @@ body::-webkit-scrollbar {
 }
 ::-webkit-scrollbar-resizer {
   display: none;
+  width: 0px;
+  background-color: transparent;
 }
 ::-webkit-scrollbar-button {
   height: 0px;
+}
+::-webkit-scrollbar-corner {
+  display: none;
 }
 
 /* Minor changes to vuetify's default component style */

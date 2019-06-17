@@ -91,9 +91,6 @@ export default {
 .appicon {
   width: 26px;
   height: 30px;
-  position: absolute;
-  top: 0px;
-  right: 4px;
   display: flex;
   justify-content: center;
   align-items: center;

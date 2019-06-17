@@ -1,29 +1,27 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-      <appicon/>
-    </div>
-    <router-view/>
+  <v-app dark>
     <stylizer/>
     <identity/>
     <menus/>
     <version/>
-  </div>
+    <toolbar/>
+    <v-content :style="getContentStyle()">
+      <router-view/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
 import identity from "./components/main/identity.vue";
+import toolbar from "./components/toolbar.vue";
 import stylizer from "./components/main/stylizer.vue";
 import menus from "./components/main/menus.vue";
 import version from "./components/main/version.vue";
-import appicon from "./components/appicon.vue";
 
 export default {
   name: "App",
   components: {
-    appicon,
+    toolbar,
     identity,
     stylizer,
     menus,
@@ -39,6 +37,7 @@ export default {
     identity: null,
     stylizer: null,
     menus: null,
+    main: null,
     isMounted: false
   }),
   mounted() {
@@ -60,6 +59,14 @@ export default {
     this.$router.push({ name: "home" });
   },
   methods: {
+    getContentStyle() {
+      return `
+        overflow: auto;
+        margin-top: ${this.$route.name == "home" ? "40" : "0"}px;
+        padding: 0px 0px 0px 0px;
+        max-height: calc(100vh - 40px);
+      `;
+    },
     dispatchEvent(name, data) {
       var event = new CSEvent(name, "APPLICATION");
       event.data = data;
@@ -124,6 +131,7 @@ svg {
 }
 
 :root {
+  height: 100vh;
   --toolbar-height: 40;
   --quad: cubic-bezier(0.48, 0.04, 0.52, 0.96);
   --quart: cubic-bezier(0.76, 0, 0.24, 1);
