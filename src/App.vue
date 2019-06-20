@@ -62,7 +62,7 @@ export default {
     getContentStyle() {
       return `
         overflow: auto;
-        margin-top: ${this.$route.name == "home" ? "40" : "0"}px;
+        margin-top: 40px;
         padding: 0px 0px 0px 0px;
         max-height: calc(100vh - 40px);
       `;

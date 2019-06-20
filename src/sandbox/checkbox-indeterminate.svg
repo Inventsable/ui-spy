@@ -1,0 +1,11 @@
+<svg id="indeterminate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <title>checkbox-indeterminate</title>
+  <path class="cls-1" d="M109.87,24H90.13A2.14,2.14,0,0,1,88,21.87V2.13A2.14,2.14,0,0,1,90.13,0h19.74A2.14,2.14,0,0,1,112,2.13V21.87A2.14,2.14,0,0,1,109.87,24ZM105,10H95v4h10Z" transform="translate(-88)"/>
+</svg>

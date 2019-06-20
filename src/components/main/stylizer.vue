@@ -214,7 +214,7 @@ export default {
     setCSS(prop, data) {
       // Sets value of CSS variable
       // prop == typeof String as name of variable, with or without leading dashes:
-      // this.setCSS('color-bg', 'rgba(25,25,25,1)') || this.setCSS('--scrollbar-width', '20px')
+      // this.setCSS('apo-color-bg', 'rgba(25,25,25,1)') || this.setCSS('--scrollbar-width', '20px')
       document.documentElement.style.setProperty(
         `${/^\-\-/.test(prop) ? prop : "--" + prop}`,
         data

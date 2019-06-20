@@ -174,6 +174,5 @@ export default {
 
 .theme--dark.v-label {
   color: var(--color-input-label);
-  /* color: red; */
 }
 </style>

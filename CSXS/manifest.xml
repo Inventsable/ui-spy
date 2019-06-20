@@ -21,8 +21,8 @@
     <Extension Id="com.ui-spy.panel">
       <DispatchInfo>
         <Resources>
-          <!-- <MainPath>./public/index-dev.html</MainPath> -->
-          <MainPath>./dist/index.html</MainPath>
+          <MainPath>./public/index-dev.html</MainPath>
+          <!-- <MainPath>./dist/index.html</MainPath> -->
           <CEFCommandLine>
             <Parameter>--enable-nodejs</Parameter>
             <Parameter>--mixed-context</Parameter>

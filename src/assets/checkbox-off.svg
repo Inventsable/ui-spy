@@ -1,0 +1,11 @@
+<svg id="off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <title>checkbox-off</title>
+  <path class="cls-1" d="M65.87,0H46.13A2.14,2.14,0,0,0,44,2.13V21.87A2.14,2.14,0,0,0,46.13,24H65.87A2.14,2.14,0,0,0,68,21.87V2.13A2.14,2.14,0,0,0,65.87,0ZM67,23H45V1H67Z" transform="translate(-44)"/>
+</svg>
