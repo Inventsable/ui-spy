@@ -310,7 +310,8 @@ module.exports = {
               let newVersion = extVersion.split(".");
               newVersion[answerver.versionIndex] = ans.newTier;
               setExtVersion(extVersion, newVersion).then(updated => {
-                console.log(`${chalk.green("✔ ")} Update successful!`);
+                console.log("");
+                console.log(`   ${chalk.green("✔ ")} Update successful!`);
                 console.log(
                   boxen(`${extName} updated to ${chalk.green(`v${updated}`)}`, {
                     ...BOXEN_OPTS,
