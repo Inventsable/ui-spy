@@ -3,6 +3,7 @@
   --color-default: #ccc;
   --color-selection: #46a0f5;
 
+  --color-btn-icon: #b6b6b6;
   --color-btn-hover: #3f3f3f;
   --color-btn-default: #323232;
   --color-btn-border: #545454;
@@ -35,7 +36,14 @@
   --color-dropdown-item-hover: #3f3f3f;
   --color-dropdown-item: #323232;
   --color-dropdown-item-selected: #519dd6;
-  --color-: #;
 
+  --color-scrollbar-track: #2a2a2a;
+  --color-scrollbar-arrow: #727272;
+  --color-scrollbar-thumb: #3f3f3f;
+  --color-scrollbar-thumb-hover: #545454;
+  --width-scrollbar-track: 20px;
+  --radius-scrollbar-thumb: 20px;
+
+  --color-divider: #2a2a2a;
   --color-tooltip-border: #767676;
 }

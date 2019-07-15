@@ -140,3 +140,15 @@
 .scrollbar-misc {
   fill: #545454;
 }
+
+.checkbox-text {
+  fill: #979797;
+}
+
+.checkbox-hover {
+  fill: #ccc;
+}
+
+.checkbox-disabled {
+  fill: #545454;
+}
