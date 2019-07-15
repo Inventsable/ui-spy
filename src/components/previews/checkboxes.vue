@@ -214,15 +214,15 @@ export default {
 }
 
 .checkbox-text {
-  fill: #979797;
+  fill: var(--color-checkbox-text);
 }
 
 .checkbox-hover {
-  fill: #ccc;
+  fill: var(--color-checkbox-hover);
 }
 
 .checkbox-disabled {
-  fill: #545454;
+  fill: var(--color-checkbox-disabled);
 }
 </style>
 

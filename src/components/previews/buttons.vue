@@ -299,47 +299,48 @@ export default {
 }
 
 .buttons-pill-text {
-  fill: #fff;
+  fill: var(--color-btn-primary-text);
 }
 
 .buttons-disabled {
-  fill: #3a3a3a;
+  fill: var(--color-btn-disabled);
 }
 
 .buttons-disabled-text {
-  fill: #545454;
+  fill: var(--color-btn-disabled-text);
 }
 
 .buttons-primary {
-  fill: #5c9ad2;
+  fill: var(--color-btn-primary);
 }
 .buttons-primary-text {
-  fill: #fff;
+  fill: var(--color-btn-primary-text);
 }
 
 .buttons-pill-text {
-  fill: #ccc;
+  fill: var(--color-default);
 }
 
 .buttons-pill-hovered {
-  fill: #7f7f7f;
+  fill: var(--color-btn-pill-hover);
 }
 
 .buttons-default {
-  fill: #333232;
+  fill: var(--color-btn-default);
 }
 
 .buttons-pill-default {
   fill: none;
-  stroke: #ccc;
+  stroke: var(--color-btn-pill-border);
+  stroke-width: 1px;
   stroke-miterlimit: 10;
 }
 
 .buttons-hovered {
-  fill: #3f3f3f;
+  fill: var(--color-btn-hover);
 }
 
 .buttons-default-text {
-  fill: #ccc;
+  fill: var(--color-default);
 }
 </style>

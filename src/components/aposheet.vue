@@ -80,23 +80,33 @@ export default {
     },
     constructDisplayList(list) {
       return list.map(item => {
-        return {
+        let obj = {
           title: item.title,
-          delta: item.delta,
           locked: false
         };
+        if (item.delta || +item.delta <= 0) obj["delta"] = item.delta;
+        else if (item.hex) obj["hex"] = item.hex;
+        else if (item.value) obj["value"] = item.value;
+        return obj;
       });
     },
     getItemColor(item) {
-      return getColorFromDeltaOffset(getPanelBG(), item.delta);
+      if (item.delta || +item.delta <= 0)
+        return getColorFromDeltaOffset(getPanelBG(), item.delta);
+      else if (item.hex) return item.hex;
+      else return item.value;
     },
     getPreviewStyle(item) {
-      return `
+      let style = `
         width: 20px;
         height: 20px;
         border: 1px solid grey;
-        background-color: ${this.getItemColor(item)};
       `;
+      if (item.delta || +item.delta <= 0)
+        style += `background-color: ${this.getItemColor(item)};`;
+      else if (item.hex) style += `background-color: ${item.hex};`;
+      else if (item.value) style += `background-color: transparent;`;
+      return style;
     }
   }
 };

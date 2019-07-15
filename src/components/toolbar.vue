@@ -1,12 +1,15 @@
 <template>
   <div>
     <v-toolbar app card dark class="darkToolbar">
-      <appicon class="mr-3"/>
+      <appicon class="mr-3" />
       <router-link v-for="(btn, i) in routebtns" :key="i" :to="btn.route">
         <v-btn icon>
           <v-icon :style="getToolbarIconStyle(btn)">{{btn.icon}}</v-icon>
         </v-btn>
       </router-link>
+      <v-btn icon>
+        <v-icon @click="writeColors">mdi-format-paint</v-icon>
+      </v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-title class="toolbar-title font-weight-light">{{theme ? theme : ''}}</v-toolbar-title>
     </v-toolbar>
@@ -47,6 +50,9 @@ export default {
     console.log(this.$route.path);
   },
   methods: {
+    writeColors() {
+      this.app.main.writeColors();
+    },
     goToLink(link) {
       cep.util.openURLInDefaultBrowser(link);
     },
@@ -66,12 +72,12 @@ export default {
 .theme--dark.v-toolbar {
   position: absolute;
   top: 0px;
-  background-color: var(--apo-color-input-idle);
+  background-color: var(--color-input-idle-bg);
   cursor: default;
 }
 
 .toolbar-title {
-  color: var(--apo-color-text-default);
+  color: var(--color-default);
   user-select: none;
 }
 

@@ -346,36 +346,36 @@ export default {
 
 .input-focused {
   stroke-width: 1px;
-  stroke: #5c9ad3;
-  fill: #fff;
+  stroke: var(--color-input-focus-border);
+  fill: var(--color-input-focus-bg);
 }
 
 .input-active-text {
-  fill: #2a2a2a;
+  fill: var(--color-input-focus-text);
 }
 
 .input-prefix-text {
-  fill: #979797;
+  fill: var(--color-text-label);
 }
 
 .input-idle-bg {
   stroke-width: 1px;
-  stroke: #3a3a3a;
-  fill: #262626;
+  stroke: var(--color-input-idle-border);
+  fill: var(--color-input-idle-bg);
 }
 
 .input-idle-text {
-  fill: #ccc;
+  fill: var(--color-input-idle-text);
 }
 
 .dropdown-idle {
   stroke-width: 1px;
-  stroke: #3a3a3a;
-  fill: #3a3a3a;
+  stroke: var(--color-dropdown-border);
+  fill: var(--color-dropdown-idle);
 }
 
 .dropdown-arrow {
-  stroke: #ccc;
+  stroke: var(--color-default);
   stroke-width: 1.5px;
 }
 
@@ -387,28 +387,28 @@ export default {
 
 .dropdown-active {
   stroke-width: 1px;
-  stroke: #3a3a3a;
-  fill: #1e1e1e;
+  stroke: var(--color-dropdown-border);
+  fill: var(--color-dropdown-active);
 }
 
 .dropdown-menu-idle {
-  fill: #323232;
+  fill: var(--color-dropdown-item);
 }
 
 .dropdown-menu-hovered {
-  fill: #3f3f3f;
+  fill: var(--color-dropdown-item-hover);
 }
 
 .dropdown-text-active {
-  fill: #519dd6;
+  fill: var(--color-dropdown-item-selected);
 }
 
 .dropdown-menu-bg {
-  stroke: #3f3f3f;
+  stroke: var(--color-dropdown-item-hover);
   stroke-width: 1.44px;
 }
 
 .dropdown-menu-divider {
-  stroke: #2a2a2a;
+  stroke: var(--color-divider);
 }
 </style>

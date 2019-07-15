@@ -52,8 +52,8 @@ export default {
 }
 
 .scrollbar-track {
-  fill: #2a2a2a;
-  stroke: #2a2a2a;
+  fill: var(--color-scrollbar);
+  stroke: var(--color-scrollbar);
 }
 
 .scrollbar-track,
@@ -62,16 +62,16 @@ export default {
 }
 
 .scrollbar-thumb {
-  fill: #3f3f3f;
+  fill: var(--color-scrollbar-thumb);
 }
 
 .scollbar-hover {
-  stroke: #727272;
+  stroke: var(--color-scrollbar-thumb-hover);
   stroke-width: 2px;
 }
 
 .scrollbar-misc {
-  fill: #545454;
+  fill: var(--color-scrollbar-arrow);
 }
 </style>
 

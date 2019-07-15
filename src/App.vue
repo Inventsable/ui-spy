@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
-    <stylizer/>
-    <identity/>
-    <menus/>
-    <version/>
-    <toolbar/>
+    <stylizer />
+    <identity />
+    <menus />
+    <version />
+    <toolbar />
     <v-content :style="getContentStyle()">
-      <router-view/>
+      <router-view />
     </v-content>
   </v-app>
 </template>
@@ -110,9 +110,7 @@ export default {
         });
       } else {
         console.log(
-          `${this.identity.root}/src/host/${
-            this.identity.appName
-          } has no valid files or does not exist`
+          `${this.identity.root}/src/host/${this.identity.appName} has no valid files or does not exist`
         );
       }
     },

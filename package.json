@@ -14,6 +14,7 @@
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "core-js": "^2.6.5",
+    "starlette": "0.0.12",
     "types-for-adobe": "^1.5.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
