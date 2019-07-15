@@ -1,0 +1,142 @@
+.buttons-pill-primary-text {
+  fill: #fff;
+}
+
+.buttons-disabled {
+  fill: #3a3a3a;
+}
+
+.buttons-disabled-text {
+  fill: #545454;
+}
+
+.buttons-primary {
+  fill: #5c9ad2;
+}
+
+.buttons-pill-text {
+  fill: #ccc;
+}
+
+.buttons-pill-hovered {
+  fill: #7f7f7f;
+}
+
+.buttons-default {
+  fill: #323232;
+}
+
+.buttons-pill-default {
+  fill: none;
+  stroke: #ccc;
+  stroke-miterlimit: 10;
+}
+
+.buttons-hovered {
+  fill: #3f3f3f;
+}
+
+.buttons-default-text {
+  fill: #ccc;
+}
+
+.inputs-container {
+  width: 340px;
+}
+.inputs-1,
+.dropdown-arrow,
+.dropdown-menu-bg,
+.dropdown-menu-divider {
+  fill: none;
+}
+
+.input-focused {
+  stroke-width: 1px;
+  stroke: #5c9ad3;
+  fill: #fff;
+}
+
+.input-active-text {
+  fill: #2a2a2a;
+}
+
+.input-prefix-text {
+  fill: #979797;
+}
+
+.input-idle-bg {
+  stroke-width: 1px;
+  stroke: #3a3a3a;
+  fill: #262626;
+}
+
+.input-idle-text {
+  fill: #ccc;
+}
+
+.dropdown-idle {
+  stroke-width: 1px;
+  stroke: #3a3a3a;
+  fill: #3a3a3a;
+}
+
+.dropdown-arrow {
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.dropdown-arrow,
+.dropdown-menu-bg,
+.dropdown-menu-divider {
+  stroke-miterlimit: 10;
+}
+
+.dropdown-active {
+  stroke-width: 1px;
+  stroke: #3a3a3a;
+  fill: #1e1e1e;
+}
+
+.dropdown-menu-idle {
+  fill: #323232;
+}
+
+.dropdown-menu-hovered {
+  fill: #3f3f3f;
+}
+
+.dropdown-text-active {
+  fill: #519dd6;
+}
+
+.dropdown-menu-bg {
+  stroke: #3f3f3f;
+  stroke-width: 1.44px;
+}
+
+.dropdown-menu-divider {
+  stroke: #2a2a2a;
+}
+
+.scrollbar-track {
+  fill: #2a2a2a;
+  stroke: #2a2a2a;
+}
+
+.scrollbar-track,
+.scollbar-hover {
+  stroke-miterlimit: 10;
+}
+
+.scrollbar-thumb {
+  fill: #3f3f3f;
+}
+
+.scollbar-hover {
+  stroke: #727272;
+  stroke-width: 2px;
+}
+
+.scrollbar-misc {
+  fill: #545454;
+}

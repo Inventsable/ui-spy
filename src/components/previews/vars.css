@@ -1,0 +1,41 @@
+:root {
+  --color-bg: #323232;
+  --color-default: #ccc;
+  --color-selection: #46a0f5;
+
+  --color-btn-hover: #3f3f3f;
+  --color-btn-default: #323232;
+  --color-btn-border: #545454;
+  --color-btn-primary: #5c9ad3;
+  --color-btn-disabled: #3a3a3a;
+  --color-btn-active: #1f1f1f;
+  --color-btn-icon-hover: #3e3e3e;
+  --color-btn-icon-hover-border: #4b4b4b;
+
+  --color-btn-toolbar-hover: #292929;
+  --color-btn-toolbar-hover-border: #474747;
+  --color-btn-toolbar-active: #1f1f1f;
+  --color-btn-toolbar-active-border: #3e3e3e;
+
+  --color-btn-primary-text: #fff;
+  --color-btn-pill-hover: #7f7f7f;
+  --color-btn-pill-border: #ccc;
+
+  --color-input-idle: #262626;
+  --color-input-idle-border: #3a3a3a;
+  --color-input-idle-text: #ccc;
+  --color-input-focus-bg: #fff;
+  --color-input-focus-border: #5c9ad3;
+  --color-input-focus-text: #2a2a2a;
+
+  --color-dropdown-idle: #262626;
+  --color-dropdown-active: #1e1e1e;
+  --color-dropdown-hover: #3a3a3a;
+  --color-dropdown-border: #3a3a3a;
+  --color-dropdown-item-hover: #3f3f3f;
+  --color-dropdown-item: #323232;
+  --color-dropdown-item-selected: #519dd6;
+  --color-: #;
+
+  --color-tooltip-border: #767676;
+}

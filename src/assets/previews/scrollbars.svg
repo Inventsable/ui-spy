@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 540">
+  <defs>
+    <style>
+      
+    </style>
+  </defs>
+  <title>scrollbars</title>
+  <rect class="cls-1" width="80" height="540"/>
+  <g>
+    <rect class="cls-2" x="8.5" y="7.5" width="22" height="520"/>
+    <rect class="cls-3" x="8.5" y="157.5" width="22" height="129" rx="11"/>
+    <path class="cls-4" d="M10.93,22l6.32-6.32a1.05,1.05,0,0,1,1.5,0L25.07,22" transform="translate(0.5 -0.5)"/>
+    <path class="cls-4" d="M25.07,512.37l-6.32,6.32a1.07,1.07,0,0,1-1.5,0l-6.32-6.32" transform="translate(0.5 -0.5)"/>
+  </g>
+  <g>
+    <rect class="cls-2" x="50.5" y="7.5" width="22" height="520"/>
+    <rect class="cls-5" x="50.5" y="104.5" width="22" height="129" rx="11"/>
+    <path class="cls-4" d="M52.93,22l6.32-6.32a1.05,1.05,0,0,1,1.5,0L67.07,22" transform="translate(0.5 -0.5)"/>
+    <path class="cls-4" d="M67.07,512.37l-6.32,6.32a1.07,1.07,0,0,1-1.5,0l-6.32-6.32" transform="translate(0.5 -0.5)"/>
+  </g>
+</svg>

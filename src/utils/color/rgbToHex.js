@@ -19,7 +19,7 @@ export default function rgbToHex(rgbArray, delta = 0) {
     "#" +
     rgbArray
       .map(c => {
-        c = c + +delta < 255 ? Math.abs(c + +delta).toString(16) : 0;
+        c = c <= 255 ? Math.abs(c).toString(16) : 0;
         return c.length < 2 ? `0${c}` : c;
       })
       .join("")

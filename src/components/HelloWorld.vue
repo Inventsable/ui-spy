@@ -22,9 +22,10 @@
             :rules="[rules.validHex, rules.mustBeFullHex, rules.counter]"
             prepend-icon="mdi-pound"
             :color="isComplete ? 'success' : 'primary'"
-            @input="checkColor()"
-            @focus="checkColor()"
+            @input="checkColor"
+            @focus="checkColor"
             @blur="handleBlur()"
+            @keyup.shift.space="grabColor"
             @keyup.enter="submitColor()"
             :hint="getHintLabel"
             maxlength="6"
@@ -100,6 +101,12 @@ export default {
     }
   },
   methods: {
+    grabColor() {
+      this.app.csInterface.evalScript(`getActiveHexColor()`, col => {
+        this.input = rgbToHex(JSON.parse(col)).substring(1, 7);
+        this.checkColor();
+      });
+    },
     submitAll() {
       this.apoColors.push({
         title: `${
@@ -142,10 +149,18 @@ export default {
       this.$refs.nameform.resetValidation();
       this.isCalc = false;
     },
-    checkColor() {
+    checkColor(evt) {
       if (!this.isComplete) {
         this.isCalc = true;
         this.output = "";
+        // this.input = /[^a-fA-F0-9]$/.test(this.input)
+        //   ? this.input
+        //       .split("")
+        //       .filter(char => {
+        //         return /[a-fA-F0-9]/.test(char);
+        //       })
+        //       .join("")
+        //   : this.input;
         return null;
       } else {
         console.log(this.input.length);
