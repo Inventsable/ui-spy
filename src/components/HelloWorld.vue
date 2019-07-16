@@ -67,8 +67,8 @@
 
 <script>
 import aposheet from "@/components/aposheet";
-// import starlette from "@/starlette";
-import starlette from 'starlette'
+import starlette from "@/starlette";
+// import starlette from 'starlette'
 
 import getPanelBG from "@/utils/color/getPanelBG";
 import rgbToHex from "@/utils/color/rgbToHex.js";

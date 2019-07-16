@@ -42,7 +42,7 @@
   --color-dropdown-item: #323232;
   --color-dropdown-item-selected: #519dd6;
 
-  --color-checkbox-text: #979797;
+  --color-checkbox: #979797;
   --color-checkbox-hover: #ccc;
   --color-checkbox-disabled: #545454;
 
@@ -50,8 +50,12 @@
   --color-scrollbar-arrow: #727272;
   --color-scrollbar-thumb: #3f3f3f;
   --color-scrollbar-thumb-hover: #545454;
+
+  --color-tooltip-border: #767676;
+
   --width-scrollbar-track: 20px;
   --radius-scrollbar-thumb: 20px;
 
-  --color-tooltip-border: #767676;
+  --color-header: #;
+  --color-header-border: #;
 }

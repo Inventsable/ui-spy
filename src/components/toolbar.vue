@@ -8,7 +8,7 @@
         </v-btn>
       </router-link>
       <v-btn icon>
-        <v-icon @click="writeColors">mdi-format-paint</v-icon>
+        <v-icon style="color: var(--color-default);" @click="writeColors">mdi-format-paint</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-title class="toolbar-title font-weight-light">{{theme ? theme : ''}}</v-toolbar-title>
@@ -57,8 +57,8 @@ export default {
       cep.util.openURLInDefaultBrowser(link);
     },
     getToolbarIconStyle(btn) {
-      let str = `color: var(--apo-color-${
-        this.$route.path == btn.route ? "selection" : "disabled"
+      let str = `color: var(--color-${
+        this.$route.path == btn.route ? "selection" : "default"
       })`;
       return str;
     }
@@ -72,7 +72,7 @@ export default {
 .theme--dark.v-toolbar {
   position: absolute;
   top: 0px;
-  background-color: var(--color-input-idle-bg);
+  background-color: var(--color-header);
   cursor: default;
 }
 

@@ -1,0 +1,202 @@
+[
+  {
+    "title": "radius-scrollbar-thumb",
+    "value": "20px"
+  },
+  {
+    "title": "width-scrollbar-track",
+    "value": "16px"
+  },
+  {
+    "title": "color-header-border",
+    "delta": -17
+  },
+  {
+    "title": "color-header",
+    "delta": "+12"
+  },
+  {
+    "title": "color-tooltip-border",
+    "delta": "+80"
+  },
+  {
+    "title": "color-scrollbar-thumb-hover",
+    "delta": "+31"
+  },
+  {
+    "title": "color-scrollbar-arrow",
+    "delta": "+106"
+  },
+  {
+    "title": "color-scrollbar-thumb",
+    "delta": "+10"
+  },
+  {
+    "title": "color-scrollbar",
+    "delta": -10
+  },
+  {
+    "title": "color-checkbox-disabled",
+    "delta": "+31"
+  },
+  {
+    "title": "color-checkbox-hover",
+    "delta": "+147"
+  },
+  {
+    "title": "color-checkbox",
+    "delta": "+99"
+  },
+  {
+    "title": "color-dropdown-item-selected",
+    "hex": "#4c86c6"
+  },
+  {
+    "title": "color-dropdown-item-hover",
+    "delta": "+31"
+  },
+  {
+    "title": "color-dropdown-item",
+    "delta": -10
+  },
+  {
+    "title": "color-dropdown-border",
+    "delta": "+7"
+  },
+  {
+    "title": "color-dropdown-hover",
+    "delta": "+3"
+  },
+  {
+    "title": "color-dropdown-active",
+    "delta": -4
+  },
+  {
+    "title": "color-dropdown-idle",
+    "delta": -10
+  },
+  {
+    "title": "color-input-focus-text",
+    "delta": -17
+  },
+  {
+    "title": "color-input-focus-border",
+    "hex": "#4892cb"
+  },
+  {
+    "title": "color-input-focus-bg",
+    "delta": "+193"
+  },
+  {
+    "title": "color-input-idle-text",
+    "delta": "+139"
+  },
+  {
+    "title": "color-input-idle-border",
+    "delta": "+7"
+  },
+  {
+    "title": "color-input-idle-bg",
+    "delta": -17
+  },
+  {
+    "title": "color-btn-toolbar-hover-border",
+    "delta": "+7"
+  },
+  {
+    "title": "color-btn-toolbar-hover",
+    "delta": "+3"
+  },
+  {
+    "title": "color-btn-toolbar-active-border",
+    "delta": "+7"
+  },
+  {
+    "title": "color-btn-toolbar-active",
+    "delta": -17
+  },
+  {
+    "title": "color-btn-icon-hover-border",
+    "delta": "+7"
+  },
+  {
+    "title": "color-btn-icon-hover",
+    "delta": "+3"
+  },
+  {
+    "title": "color-btn-icon-active-border",
+    "delta": "+7"
+  },
+  {
+    "title": "color-btn-icon-active",
+    "delta": -17
+  },
+  {
+    "title": "color-btn-pill-active",
+    "delta": "+99"
+  },
+  {
+    "title": "color-btn-pill-border",
+    "delta": "+187"
+  },
+  {
+    "title": "color-btn-pill-hover",
+    "delta": "+99"
+  },
+  {
+    "title": "color-btn-primary-text",
+    "hex": "#ffffff"
+  },
+  {
+    "title": "color-btn-disabled-text",
+    "delta": "+31"
+  },
+  {
+    "title": "color-btn-active",
+    "delta": "+61"
+  },
+  {
+    "title": "color-btn-disabled",
+    "delta": "+3"
+  },
+  {
+    "title": "color-btn-primary",
+    "hex": "#4885c6"
+  },
+  {
+    "title": "color-btn-border",
+    "delta": "+99"
+  },
+  {
+    "title": "color-btn-hover",
+    "delta": "+99"
+  },
+  {
+    "title": "color-btn-default",
+    "delta": -4
+  },
+  {
+    "title": "color-divider",
+    "delta": "+6"
+  },
+  {
+    "title": "color-selection",
+    "hex": "#4892cb"
+  },
+  {
+    "title": "color-icon",
+    "delta": "+139"
+  },
+  {
+    "title": "color-text-label",
+    "delta": "+99"
+  },
+  {
+    "title": "color-default",
+    "delta": "+99"
+  },
+  {
+    "title": "color-bg",
+    "delta": -4
+  }
+]

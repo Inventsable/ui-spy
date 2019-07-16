@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app :dark="isDark">
     <stylizer />
     <identity />
     <menus />
@@ -17,6 +17,8 @@ import toolbar from "./components/toolbar.vue";
 import stylizer from "./components/main/stylizer.vue";
 import menus from "./components/main/menus.vue";
 import version from "./components/main/version.vue";
+
+import starlette from "./starlette";
 
 export default {
   name: "App",
@@ -37,6 +39,7 @@ export default {
     identity: null,
     stylizer: null,
     menus: null,
+    isDark: true,
     main: null,
     isMounted: false
   }),
@@ -56,6 +59,9 @@ export default {
     this.loadUniversalScripts();
 
     // Vue Router must be manually initialized in CEP:
+    console.log(starlette);
+    // starlette.buildTableForApp("ILST");
+
     this.$router.push({ name: "home" });
   },
   methods: {

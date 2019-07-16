@@ -55,10 +55,6 @@
         <g id="idle">
           <g>
             <rect class="input-idle-bg" x="75.14" y="51.5" width="74" height="26" rx="2.32" />
-            <path
-              class="input-idle-bg"
-              d="M146.82,52a1.82,1.82,0,0,1,1.82,1.82V75.18A1.82,1.82,0,0,1,146.82,77H77.46a1.83,1.83,0,0,1-1.82-1.82V53.82A1.83,1.83,0,0,1,77.46,52h69.36m0-1H77.46a2.83,2.83,0,0,0-2.82,2.82V75.18A2.83,2.83,0,0,0,77.46,78h69.36a2.82,2.82,0,0,0,2.82-2.82V53.82A2.82,2.82,0,0,0,146.82,51Z"
-            />
           </g>
           <g>
             <path
@@ -106,10 +102,6 @@
         <g id="idle-2" data-name="idle">
           <g>
             <rect class="dropdown-idle" x="47.14" y="7.5" width="104" height="26" rx="2.32" />
-            <!-- <path
-              class="input-idle-bg"
-              d="M148.82,8a1.82,1.82,0,0,1,1.82,1.82V31.18A1.82,1.82,0,0,1,148.82,33H49.46a1.83,1.83,0,0,1-1.82-1.82V9.82A1.83,1.83,0,0,1,49.46,8h99.36m0-1H49.46a2.83,2.83,0,0,0-2.82,2.82V31.18A2.83,2.83,0,0,0,49.46,34h99.36a2.82,2.82,0,0,0,2.82-2.82V9.82A2.82,2.82,0,0,0,148.82,7Z"
-            />-->
           </g>
           <g>
             <path
@@ -157,10 +149,6 @@
           <g>
             <g>
               <rect class="dropdown-active" x="240.14" y="7.5" width="104" height="26" rx="2.32" />
-              <!-- <path
-                class="input-idle-bg"
-                d="M341.82,8a1.82,1.82,0,0,1,1.82,1.82V31.18A1.82,1.82,0,0,1,341.82,33H242.46a1.83,1.83,0,0,1-1.82-1.82V9.82A1.83,1.83,0,0,1,242.46,8h99.36m0-1H242.46a2.83,2.83,0,0,0-2.82,2.82V31.18A2.83,2.83,0,0,0,242.46,34h99.36a2.82,2.82,0,0,0,2.82-2.82V9.82A2.82,2.82,0,0,0,341.82,7Z"
-              />-->
             </g>
             <g>
               <path
@@ -345,7 +333,7 @@ export default {
 }
 
 .input-focused {
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke: var(--color-input-focus-border);
   fill: var(--color-input-focus-bg);
 }
@@ -359,7 +347,7 @@ export default {
 }
 
 .input-idle-bg {
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke: var(--color-input-idle-border);
   fill: var(--color-input-idle-bg);
 }
@@ -369,7 +357,7 @@ export default {
 }
 
 .dropdown-idle {
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke: var(--color-dropdown-border);
   fill: var(--color-dropdown-idle);
 }
@@ -386,7 +374,7 @@ export default {
 }
 
 .dropdown-active {
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke: var(--color-dropdown-border);
   fill: var(--color-dropdown-active);
 }

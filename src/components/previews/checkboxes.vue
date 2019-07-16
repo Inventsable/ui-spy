@@ -214,7 +214,7 @@ export default {
 }
 
 .checkbox-text {
-  fill: var(--color-checkbox-text);
+  fill: var(--color-checkbox);
 }
 
 .checkbox-hover {

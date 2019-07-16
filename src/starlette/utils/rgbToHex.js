@@ -9,12 +9,12 @@ export default function rgbToHex(rgbArray, delta = 0) {
       ]
     : rgbArray;
   while (rgbArray.length > 3) rgbArray.pop();
-  // rgbArray =
-  //   /aeft/i.test(
-  //     JSON.parse(window.__adobe_cep__.getHostEnvironment()).appName
-  //   ) && rgbArray.reduce((a, b) => a + b, 0) <= 3
-  //     ? rgbArray.map(a => a * 255)
-  //     : rgbArray;
+  rgbArray =
+    /aeft/i.test(
+      JSON.parse(window.__adobe_cep__.getHostEnvironment()).appName
+    ) && rgbArray.reduce((a, b) => a + b, 0) <= 3
+      ? rgbArray.map(a => a * 255)
+      : rgbArray;
   return (
     "#" +
     rgbArray

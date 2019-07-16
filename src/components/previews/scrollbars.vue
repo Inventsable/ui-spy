@@ -66,12 +66,12 @@ export default {
 }
 
 .scollbar-hover {
-  stroke: var(--color-scrollbar-thumb-hover);
+  stroke: var(--color-scrollbar-arrow);
   stroke-width: 2px;
 }
 
 .scrollbar-misc {
-  fill: var(--color-scrollbar-arrow);
+  fill: var(--color-scrollbar-thumb-hover);
 }
 </style>
 

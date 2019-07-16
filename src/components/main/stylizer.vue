@@ -169,6 +169,8 @@ export default {
         else if (bgcolor.red > 170) this.theme = "light";
         else if (bgcolor.red > 80) this.theme = "dark";
         else this.theme = "darkest";
+        if (/light/.test(this.theme)) this.app.isDark = false;
+        else this.app.isDark = true;
         // this.setILST();
       } else if (
         JSON.parse(window.__adobe_cep__.getHostEnvironment()).appName == "AEFT"
@@ -253,9 +255,10 @@ export default {
       Below are CSS variables controlled by stylizer
       By default hard-coded to Illustrator's dark theme but will ultimately be overridden on launch
    */
-  /* --apo-color-bg: #323232;
   --apo-color-dark: #1f1f1f;
   --apo-color-selection: #46a0f5;
+  --color-bg: #323232;
+  /*
   --apo-color-disabled: #525252;
   --apo-color-hover: rgba(255, 255, 225, 0.2);
 
@@ -288,6 +291,9 @@ export default {
 
 /* Override certain default features to be more inline with Adobe's host app style */
 .theme--dark.application {
+  background-color: var(--color-bg);
+}
+.theme--light.application {
   background-color: var(--color-bg);
 }
 body::-webkit-scrollbar {
